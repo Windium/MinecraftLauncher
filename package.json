@@ -1,0 +1,21 @@
+{
+  "name": "Windium Minecraft Launcher",
+  "version": "0.0.1",
+  "description": "Simple Minecraft Launcher build with NodeJS & ElectronJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . Windium-Launcher --overwrite --platform=win32 --arch=ia32 --icon=public/img/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName='Windium Launcher'"
+  },
+  "author": "Windium#1445",
+  "license": "ISC",
+  "dependencies": {
+    "appdata-path": "^1.0.0",
+    "custom-electron-titlebar": "^3.2.6",
+    "minecraft-launcher-core": "^3.16.2"
+  },
+  "devDependencies": {
+    "electron": "^11.3.0",
+    "electron-packager": "^15.2.0"
+  }
+}
